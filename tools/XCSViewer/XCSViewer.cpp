@@ -13,11 +13,7 @@ int main(int argc, char* argv[]) {
         std::cerr << "Usage: " << argv[0] << " <script.xcs>\n" << std::endl;
         std::cerr << "Version - " << versionNumber << "\n" << std::endl;
         printf("Supported games:\n");
-        printf(" * Adibou 3\n");
-        printf(" * Adi 5\n");
-        printf(" * Adibou presente series\n");
-        printf(" * Adiboud'chou series\n");
-        printf(" * Le Pays des pierres magiques\n\n");
+        printf("Will be added soon");
         printf("<script.xcs>\n\t .xcs script to view\n\n");
         return 1;
     }
