@@ -14,6 +14,12 @@ void Ordinal_205(void) {
 	return;
 }
 
+// Implementation of Ordinal_207
+void Ordinal_207(void) {
+	Ordinal_207();
+	return;
+}
+
 // Implementation of DisableLibraryCalls
 void DisableLibraryCalls(HINSTANCE hInstance, int dwReason)
 {
@@ -23,6 +29,7 @@ void DisableLibraryCalls(HINSTANCE hInstance, int dwReason)
     return;
 }
 
+// Implementation of EffectsInit
 void EffectsInit(void) {
 
 	return;
