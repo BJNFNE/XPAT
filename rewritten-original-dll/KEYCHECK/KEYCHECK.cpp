@@ -26,6 +26,14 @@ void terminate(void) {
 	return;
 }
 
+// Implementation of terminate_param
+void __cdecl terminate_param(int **param_1)
+{
+    if (**param_1 == -0x1f928c9d) {
+        TerminateProcess(GetCurrentProcess(), 0);
+    }
+}
+
 // Implementation of DisableLibraryCalls
 void DisableLibraryCalls(HINSTANCE hInstance, int dwReason)
 {
