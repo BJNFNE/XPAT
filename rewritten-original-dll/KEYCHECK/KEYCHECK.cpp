@@ -8,6 +8,12 @@ static EntryPointFunc g_EntryPointFunc = NULL;
 // Declaration of DisableLibraryCalls as an external function
 extern "C" void DisableLibraryCalls(HINSTANCE hInstance, int dwReason);
 
+// Implementation of Ordinal_205
+void Ordinal_205(void) {
+	Ordinal_205();
+	return;
+}
+
 // Implementation of DisableLibraryCalls
 void DisableLibraryCalls(HINSTANCE hInstance, int dwReason)
 {
