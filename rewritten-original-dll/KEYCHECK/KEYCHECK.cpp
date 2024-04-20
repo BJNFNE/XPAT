@@ -88,6 +88,16 @@ void __cdecl EffectProcs(short *effectCodes)
     effectCodes[0x78] = *(short *)(&effectCodes[0x10b0] + *effectCodes * 2);
 }
 
+// Implementation of GetStateKey function
+void __cdecl GetStateKey(int param_1)
+{
+    if (*(short *)(param_1 + 4) == 6 && *(char *)((*(int *)(param_1 + 6)) + *(int *)(param_1 + 100) + 1) == '\0')
+    {
+        unsigned short *keyState = *(unsigned short **)(*(int *)(param_1 + 6) + *(int *)(param_1 + 100));
+        unsigned char state = (unsigned char)GetKeyState((int)(short)*keyState);
+        *keyState = (unsigned short)state;
+    }
+}
 
 // Implementation of the entry function
 int entry(HINSTANCE hInstance, int dwReason, DWORD dwReserved)
