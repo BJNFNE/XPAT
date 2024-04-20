@@ -17,6 +17,12 @@ void DisableLibraryCalls(HINSTANCE hInstance, int dwReason)
     return;
 }
 
+void EffectsInit(void) {
+
+	return;
+}
+
+
 // Implementation of EffectProcs
 void __cdecl EffectProcs(short *effectCodes)
 {
