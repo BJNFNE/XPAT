@@ -43,6 +43,20 @@ void DisableLibraryCalls(HINSTANCE hInstance, int dwReason)
     return;
 }
 
+// Implementation of NumEffects
+// Declaration of the external variable DAT_10003020
+int DAT_10003020;
+
+// NumEffects function
+int NumEffects(void)
+{
+    // Define the variable DAT_10003020 internally
+    int DAT_10003020 = 10; /* initialize it with appropriate value */;
+
+    // Return the number of effects
+    return DAT_10003020;
+}
+
 // Implementation of EffectsInit
 void EffectsInit(void) {
 
