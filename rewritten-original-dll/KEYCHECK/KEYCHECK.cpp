@@ -20,15 +20,25 @@ void Ordinal_207(void) {
 	return;
 }
 
+
 // Implementation of KeyCheck
 // Declaration and call of KeyCheck function
-/*void KeyCheck(void) // TODO: Fix function properly
+void KeyCheck(void) // TODO: Fix function properly
 {
     // Call Ordinal_207 with KeyCheck as argument
-    Ordinal_207(KeyCheck);
-    return;
-*/}
+ Ordinal_207();
+ return;
+}
 
+
+// Implementation of KeyCheckVK
+// Declaration and call of KeyCheckVK function
+void KeyCheckVK(void) // TODO: Fix function properly
+{
+    // Call Ordinal_207 with KeyCheckVK as argument
+       Ordinal_207();
+       return;
+}
 // Implementation of terminate
 void terminate(void) {
 	terminate();
