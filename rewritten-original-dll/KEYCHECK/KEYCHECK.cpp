@@ -20,6 +20,12 @@ void Ordinal_207(void) {
 	return;
 }
 
+// Implementation of terminate
+void terminate(void) {
+	terminate();
+	return;
+}
+
 // Implementation of DisableLibraryCalls
 void DisableLibraryCalls(HINSTANCE hInstance, int dwReason)
 {
