@@ -12,6 +12,10 @@ DEBUG_CXXFLAGS = $(DEBUG_CFLAGS) -std=c++20
 # Directory containing source files
 SRC_DIR = tools
 
+# Source files (which should be not compiled)
+SRCS_C = $(filter-out $(SRC_DIR)/rewritten-original-dll/%.c, $(shell find $(SRC_DIR) -name '*.c'))
+SRCS_CPP = $(filter-out $(SRC_DIR)/rewritten-original-dll/%.cpp, $(shell find $(SRC_DIR) -name '*.cpp'))
+
 # Object files
 OBJS_C = $(patsubst $(SRC_DIR)/%.c,binaries/%.o,$(SRCS_C))
 OBJS_CPP = $(patsubst $(SRC_DIR)/%.cpp,binaries/%.o,$(SRCS_CPP))
