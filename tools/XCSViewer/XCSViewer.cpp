@@ -106,7 +106,7 @@ int main(int argc, char* argv[]) {
     std::cout << "\b" << std::endl;
     std::cout << "Press Enter to exit XCS Viewer & clear the Console" << std::endl;
     getchar();
-    system(clearConsole.c_str());
+    int clearConsoleExecute =  system(clearConsole.c_str());
 
     return 0;
 }
